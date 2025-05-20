@@ -4,15 +4,23 @@
 
 ## <h1 id="table-des-matieres">Table des matières</h1>
 
-1. [Définition d’un service Web](#1) 
-2. [Le protocole HTTP](#2) 
-   2.1 [Les verbes HTTP](#2-1) 
-   2.2 [Les codes de statut HTTP](#2-2) 
-3. [Les types d’API : REST, SOAP, GraphQL](#3) 
-   3.1 [API REST](#3-1) 
-   3.2 [API SOAP](#3-2) 
-   3.3 [API GraphQL](#3-3) 
-4. [Introduction à Next.js](#4) 
+1. [Définition d’un service Web](#1)
+   
+3. [Le protocole HTTP](#2)
+   
+   2.1 [Les verbes HTTP](#2-1)
+
+   2.2 [Les codes de statut HTTP](#2-2)
+   
+5. [Les types d’API : REST, SOAP, GraphQL](#3)
+   
+   3.1 [API REST](#3-1)
+
+   3.2 [API SOAP](#3-2)
+   
+   3.3 [API GraphQL](#3-3)
+   
+7. [Introduction à Next.js](#4) 
 
 
 
