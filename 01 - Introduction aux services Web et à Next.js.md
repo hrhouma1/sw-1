@@ -146,3 +146,110 @@ Il permet de **fournir, manipuler ou échanger des données** indépendamment de
 * Intégration facile avec des APIs externes REST ou GraphQL
 * Possibilité d’héberger une application *frontend* et *backend* dans le même projet
 * Excellent pour les applications modernes, performantes et bien structurées
+
+
+<hr/>
+
+# Exercice 
+
+
+# <h1 id="exercice-pratique-nextjs-api">5. Exercice pratique – Appeler une API REST avec Next.js</h1>
+
+###  Objectif :
+
+Créer une application Next.js qui **affiche une liste d'utilisateurs** en consommant une **API REST publique**.
+
+
+
+## <h2 id="etapes">Étapes à suivre</h2>
+
+### 1. Créer un projet Next.js
+
+```bash
+npx create-next-app@latest mon-projet-api
+cd mon-projet-api
+npm run dev
+```
+
+Ouvrir [http://localhost:3000](http://localhost:3000) pour tester.
+
+
+
+### 2. Choisir une API REST gratuite
+
+On utilisera :
+📎 [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
+Cette URL retourne une liste de 10 utilisateurs.
+
+
+
+### 3. Modifier la page d’accueil (`pages/index.js` ou `index.tsx`)
+
+Remplacer le contenu par :
+
+```jsx
+import React, { useEffect, useState } from 'react';
+
+export default function Home() {
+  const [utilisateurs, setUtilisateurs] = useState([]);
+  const [chargement, setChargement] = useState(true);
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((res) => res.json())
+      .then((data) => {
+        setUtilisateurs(data);
+        setChargement(false);
+      });
+  }, []);
+
+  if (chargement) {
+    return <p>Chargement des utilisateurs...</p>;
+  }
+
+  return (
+    <div style={{ padding: '2rem' }}>
+      <h1>Liste des utilisateurs</h1>
+      <ul>
+        {utilisateurs.map((u) => (
+          <li key={u.id}>
+            {u.name} ({u.email})
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+
+
+## <h2 id="resultat-attendu">Résultat attendu</h2>
+
+La page d’accueil de votre app affiche dynamiquement :
+
+```
+Liste des utilisateurs
+- Leanne Graham (Sincere@april.biz)
+- Ervin Howell (Shanna@melissa.tv)
+- ...
+```
+
+
+
+## <h2 id="points-pedagogiques">À Approfondir la prochaine séance </h2>
+
+* Comprendre le **hook `useEffect`** pour exécuter une requête au chargement
+* Utilisation de **`fetch()`** pour appeler une API REST
+* Stockage de la réponse avec **`useState()`**
+* Affichage conditionnel (`chargement`)
+
+
+
+## <h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
+
+* Ajouter une gestion d’erreur si l’API ne répond pas
+* Créer une **page par utilisateur** avec `getStaticPaths`
+* Afficher plus d’infos (adresse, entreprise…)
+
+
