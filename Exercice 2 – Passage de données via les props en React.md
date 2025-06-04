@@ -46,6 +46,7 @@ App.js
 # Correction -  Exercice React – Passage de props (string et fonction)
 
 
+<br/>
 
 ## Q1. Créer l’application React
 
@@ -57,11 +58,11 @@ cd exercice-props
 npm start
 ```
 
-
+<br/>
 
 ## Q2. Créer le composant `MoteurRecherche.js` (classe)
 
-### 📄 Fichier : `src/MoteurRecherche.js`
+###  Fichier : `src/MoteurRecherche.js`
 
 ```jsx
 import React from 'react';
@@ -79,11 +80,11 @@ class MoteurRecherche extends React.Component {
 export default MoteurRecherche;
 ```
 
-
+<br/>
 
 ## Q3. Créer le composant `FicheProduit.js` (classe)
 
-### 📄 Fichier : `src/FicheProduit.js`
+###  Fichier : `src/FicheProduit.js`
 
 ```jsx
 import React from 'react';
@@ -101,11 +102,11 @@ class FicheProduit extends React.Component {
 export default FicheProduit;
 ```
 
-
+<br/>
 
 ## Q4. Créer le composant `ProfilClient.js` (fonction)
 
-### 📄 Fichier : `src/ProfilClient.js`
+###  Fichier : `src/ProfilClient.js`
 
 ```jsx
 import React from 'react';
@@ -121,11 +122,11 @@ const ProfilClient = () => {
 export default ProfilClient;
 ```
 
-
+<br/>
 
 ## Q5 à Q7. Appeler les 3 composants dans `App.js` sans props
 
-### 📄 Fichier : `src/App.js`
+###  Fichier : `src/App.js`
 
 ```jsx
 import React from 'react';
@@ -151,11 +152,11 @@ class App extends React.Component {
 export default App;
 ```
 
-
+<br/>
 
 ## Q8. Ajouter une prop `titre` (string) à `MoteurRecherche`
 
-### 📄 Fichier : `src/App.js`
+###  Fichier : `src/App.js`
 
 ```jsx
 import React from 'react';
@@ -183,10 +184,11 @@ export default App;
 ```
 
 
+<br/>
 
 ## Q9. Ajouter une prop `nomProduit` (string) à `FicheProduit`
 
-### 📄 Fichier : `src/App.js`
+###  Fichier : `src/App.js`
 
 ```jsx
 import React from 'react';
@@ -214,11 +216,11 @@ class App extends React.Component {
 export default App;
 ```
 
-
+<br/>
 
 ## Q10. Ajouter une prop `nomClient` (string) à `ProfilClient`
 
-### 📄 Fichier : `src/App.js`
+###  Fichier : `src/App.js`
 
 ```jsx
 import React from 'react';
@@ -245,11 +247,11 @@ class App extends React.Component {
 export default App;
 ```
 
-
+<br/>
 
 ## Q11. Ajouter une prop `action` (fonction) à `MoteurRecherche`
 
-### 📄 Fichier : `src/App.js`
+###  Fichier : `src/App.js`
 
 ```jsx
 import React from 'react';
@@ -279,11 +281,11 @@ class App extends React.Component {
 export default App;
 ```
 
-
+<br/>
 
 ## Q12. Afficher la prop `titre` dans `MoteurRecherche.js`
 
-### 📄 Fichier : `src/MoteurRecherche.js`
+###  Fichier : `src/MoteurRecherche.js`
 
 ```jsx
 import React from 'react';
@@ -305,10 +307,11 @@ export default MoteurRecherche;
 ```
 
 
+<br/>
 
 ## Q13. Utiliser la prop `action` via un bouton dans `MoteurRecherche.js`
 
-### 📄 Fichier : `src/MoteurRecherche.js`
+###  Fichier : `src/MoteurRecherche.js`
 
 ```jsx
 import React from 'react';
