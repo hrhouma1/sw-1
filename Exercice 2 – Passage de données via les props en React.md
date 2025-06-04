@@ -36,3 +36,301 @@ App.js
 ```
 
 
+
+
+
+<br/>
+
+
+
+# Correction -  Exercice React – Passage de props (string et fonction)
+
+
+
+## Q1. Créer l’application React
+
+**Commande à exécuter :**
+
+```bash
+npx create-react-app exercice-props
+cd exercice-props
+npm start
+```
+
+
+
+## Q2. Créer le composant `MoteurRecherche.js` (classe)
+
+### 📄 Fichier : `src/MoteurRecherche.js`
+
+```jsx
+import React from 'react';
+
+class MoteurRecherche extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Moteur de Recherche</h2>
+      </div>
+    );
+  }
+}
+
+export default MoteurRecherche;
+```
+
+
+
+## Q3. Créer le composant `FicheProduit.js` (classe)
+
+### 📄 Fichier : `src/FicheProduit.js`
+
+```jsx
+import React from 'react';
+
+class FicheProduit extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Fiche Produit</h2>
+      </div>
+    );
+  }
+}
+
+export default FicheProduit;
+```
+
+
+
+## Q4. Créer le composant `ProfilClient.js` (fonction)
+
+### 📄 Fichier : `src/ProfilClient.js`
+
+```jsx
+import React from 'react';
+
+const ProfilClient = () => {
+  return (
+    <div>
+      <h2>Composant Profil Client</h2>
+    </div>
+  );
+};
+
+export default ProfilClient;
+```
+
+
+
+## Q5 à Q7. Appeler les 3 composants dans `App.js` sans props
+
+### 📄 Fichier : `src/App.js`
+
+```jsx
+import React from 'react';
+import MoteurRecherche from './MoteurRecherche';
+import FicheProduit from './FicheProduit';
+import ProfilClient from './ProfilClient';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Interface principale</h1>
+
+        {/* 🔽 Appels sans props */}
+        <MoteurRecherche />
+        <FicheProduit />
+        <ProfilClient />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+
+
+## Q8. Ajouter une prop `titre` (string) à `MoteurRecherche`
+
+### 📄 Fichier : `src/App.js`
+
+```jsx
+import React from 'react';
+import MoteurRecherche from './MoteurRecherche';
+import FicheProduit from './FicheProduit';
+import ProfilClient from './ProfilClient';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Interface principale</h1>
+
+        {/* 🔽 Ajout de la prop titre */}
+        <MoteurRecherche titre="Recherche des produits disponibles" />
+
+        <FicheProduit />
+        <ProfilClient />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+
+
+## Q9. Ajouter une prop `nomProduit` (string) à `FicheProduit`
+
+### 📄 Fichier : `src/App.js`
+
+```jsx
+import React from 'react';
+import MoteurRecherche from './MoteurRecherche';
+import FicheProduit from './FicheProduit';
+import ProfilClient from './ProfilClient';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Interface principale</h1>
+
+        <MoteurRecherche titre="Recherche des produits disponibles" />
+
+        {/* 🔽 Ajout de la prop nomProduit */}
+        <FicheProduit nomProduit="Ordinateur portable Dell" />
+
+        <ProfilClient />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+
+
+## Q10. Ajouter une prop `nomClient` (string) à `ProfilClient`
+
+### 📄 Fichier : `src/App.js`
+
+```jsx
+import React from 'react';
+import MoteurRecherche from './MoteurRecherche';
+import FicheProduit from './FicheProduit';
+import ProfilClient from './ProfilClient';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Interface principale</h1>
+
+        <MoteurRecherche titre="Recherche des produits disponibles" />
+        <FicheProduit nomProduit="Ordinateur portable Dell" />
+
+        {/* 🔽 Ajout de la prop nomClient */}
+        <ProfilClient nomClient="Jean Dupont" />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+
+
+## Q11. Ajouter une prop `action` (fonction) à `MoteurRecherche`
+
+### 📄 Fichier : `src/App.js`
+
+```jsx
+import React from 'react';
+import MoteurRecherche from './MoteurRecherche';
+import FicheProduit from './FicheProduit';
+import ProfilClient from './ProfilClient';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Interface principale</h1>
+
+        {/* 🔽 Ajout de la prop action */}
+        <MoteurRecherche
+          titre="Recherche des produits disponibles"
+          action={() => console.log("Recherche lancée depuis App")}
+        />
+
+        <FicheProduit nomProduit="Ordinateur portable Dell" />
+        <ProfilClient nomClient="Jean Dupont" />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+
+
+## Q12. Afficher la prop `titre` dans `MoteurRecherche.js`
+
+### 📄 Fichier : `src/MoteurRecherche.js`
+
+```jsx
+import React from 'react';
+
+class MoteurRecherche extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Moteur de Recherche</h2>
+
+        {/* 🔽 Affichage de la prop titre */}
+        <p>{this.props.titre}</p>
+      </div>
+    );
+  }
+}
+
+export default MoteurRecherche;
+```
+
+
+
+## Q13. Utiliser la prop `action` via un bouton dans `MoteurRecherche.js`
+
+### 📄 Fichier : `src/MoteurRecherche.js`
+
+```jsx
+import React from 'react';
+
+class MoteurRecherche extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Moteur de Recherche</h2>
+
+        <p>{this.props.titre}</p>
+
+        {/* 🔽 Bouton déclenchant la fonction passée via props */}
+        <button onClick={this.props.action}>
+          Lancer la recherche
+        </button>
+      </div>
+    );
+  }
+}
+
+export default MoteurRecherche;
+```
+
+
