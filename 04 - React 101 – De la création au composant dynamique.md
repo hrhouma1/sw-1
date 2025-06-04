@@ -1,5 +1,6 @@
 # <h1 id="toc">Table des matières – Cours React 1</h1>
 
+<h1 id="toc">Table des matières – Cours React 1</h1>
 <ul>
   <li><a href="#prerequis">Prérequis</a></li>
   <li><a href="#stack">Stack Web – Architecture MERN, LAMP, MEAN...</a></li>
@@ -14,11 +15,11 @@
   <li><a href="#etape7-classes">Étape 7 – Transformer un composant fonctionnel en classe</a></li>
   <li><a href="#etape8-stateless">Étape 8 – Ajouter des composants stateless</a></li>
   <li><a href="#etape9-props">Étape 9 – Props simples</a></li>
-  <li><a href="#etape10-children">Étape 10 – Utiliser `props.children`</a></li>
-  <li><a href="#etape11-props-alternative">Étape 11 – Autre syntaxe avec `props`</a></li>
-  <li><a href="#etape12-state">Étape 12 – Travailler avec `state`</a></li>
-  <li><a href="#etape13-setstate">Étape 13 – Modifier l’état avec `setState`</a></li>
-  <li><a href="#etape14-suite">À venir – Champs dynamiques, hooks, router...</a></li>
+  <li><a href="#etape10-children">Étape 10 – Utiliser props.children</a></li>
+  <li><a href="#etape11-props-alternative">Étape 11 – Autre syntaxe avec props</a></li>
+  <li><a href="#etape12-state">Étape 12 – Travailler avec state</a></li>
+  <li><a href="#etape13-setstate">Étape 13 – Modifier l’état avec setState</a></li>
+  <li><a href="#etape14-suite">À venir – Hooks, routing, formulaires…</a></li>
 </ul>
 
 
