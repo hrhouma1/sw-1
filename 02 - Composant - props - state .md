@@ -43,7 +43,7 @@ Utilisation :
 <Bonjour nom="Bob" />
 ```
 
-### 📌 En résumé :
+###  En résumé :
 
 * Les props permettent de **personnaliser le comportement ou l’affichage** d’un composant.
 * **Immuables** : un composant **ne peut pas modifier ses props**.
@@ -54,24 +54,40 @@ Utilisation :
 
 Le **state** (état) est une **donnée interne au composant** qui **peut changer au cours du temps**. On l’utilise pour gérer des **interactions dynamiques** : clics, formulaires, etc.
 
-👉 Exemple avec `useState` :
+
+
+
+## <h2 id="ex-compteur-classe-modern"> Exemple moderne : Compteur avec classe</h2>
 
 ```jsx
-import { useState } from 'react';
+import React from 'react';
 
-function Compteur() {
-  const [compteur, setCompteur] = useState(0);
+class Compteur extends React.Component {
+  // Définition directe du state comme propriété de classe
+  state = {
+    compteur: 0
+  };
 
-  return (
-    <div>
-      <p>Valeur : {compteur}</p>
-      <button onClick={() => setCompteur(compteur + 1)}>
-        Incrémenter
-      </button>
-    </div>
-  );
+  // Méthode fléchée pour garder le bon contexte `this`
+  incrementer = () => {
+    this.setState({ compteur: this.state.compteur + 1 });
+  };
+
+  render() {
+    return (
+      <div>
+        <p>Valeur : {this.state.compteur}</p>
+        <button onClick={this.incrementer}>
+          Incrémenter
+        </button>
+      </div>
+    );
+  }
 }
 ```
+
+
+
 
 ###  En résumé :
 
