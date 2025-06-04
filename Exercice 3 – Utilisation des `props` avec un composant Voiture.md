@@ -26,52 +26,153 @@
    * Le **troisième bouton** affiche la **valeur de la prop `kilometrage`**
    * Le **quatrième bouton** **appelle la fonction `demarrer`** passée en prop
 
----
-
-## Exercice 3 – Props dynamiques et `state`
-
-## Objectifs pédagogiques :
-
-* Comprendre la relation entre les `props` et le `state`
-* Savoir capturer des entrées utilisateur et les transférer à un composant enfant
-* Gérer l'état dans un composant parent pour alimenter dynamiquement ses enfants
 
 <br/>
 
-### Contexte :
+# Correction
 
-On souhaite améliorer le composant `Car` de l'exercice précédent pour qu’il affiche les valeurs **non plus codées en dur**, mais transmises **dynamiquement** via des champs de formulaire.
+* Fichiers complets à chaque étape
+* Indication claire du **fichier concerné**
+* Ajouts marqués avec `// 🔽 Ajout`
 
----
+<br/>
 
-### Consignes :
+## Q1. Créer une application React
 
-1. Dans le composant `App.js`, ajoutez **trois champs `input`** pour que l’utilisateur puisse saisir :
-
-   * la **couleur** de la voiture
-   * la **marque**
-   * le **kilométrage**
-
-2. Utilisez l’état local (`state`) de `App.js` pour stocker ces valeurs au fur et à mesure de la saisie.
-
-3. Transmettez ces valeurs à `Car` via les props, comme suit :
-
-   ```jsx
-   <Car
-     couleur={valeurCouleur}
-     marque={valeurMarque}
-     kilometrage={valeurKilometrage}
-     demarrer={...}
-   />
-   ```
-
-4. Le composant `Car` **ne doit pas être modifié**. Il doit continuer à recevoir et afficher les valeurs via `props` comme dans l’exercice 2.
+```bash
+npx create-react-app exercice-voiture
+cd exercice-voiture
+npm start
+```
 
 ---
 
-### Résultat attendu :
+## Q2. Créer un composant `Car.js` de type classe
 
-* Les informations affichées dans le composant `Car` changent **en direct** selon ce que l’utilisateur saisit dans les champs.
-* Le composant `Car` reste réutilisable avec **différentes données**.
-* Aucune logique d’état (`useState` ou `this.state`) ne doit être ajoutée à `Car.js`.
+### 📄 Fichier : `src/Car.js`
+
+```jsx
+import React from 'react';
+
+class Car extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Car</h2>
+      </div>
+    );
+  }
+}
+
+export default Car;
+```
+
+<br/>
+
+## Q3. Appeler `Car` avec 3 props string : `couleur`, `marque`, `kilometrage`
+
+### 📄 Fichier : `src/App.js`
+
+```jsx
+import React from 'react';
+import Car from './Car';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Interface principale</h1>
+
+        {/* 🔽 Appel de Car avec 3 props */}
+        <Car
+          couleur="rouge"
+          marque="Toyota Matrix"
+          kilometrage="100 km"
+        />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+<br/>
+
+## Q4. Ajouter une prop fonction `demarrer` à `Car`
+
+### 📄 Fichier : `src/App.js` (mise à jour complète)
+
+```jsx
+import React from 'react';
+import Car from './Car';
+
+class App extends React.Component {
+  handleDemarrer = () => {
+    console.log("La voiture démarre");
+  };
+
+  render() {
+    return (
+      <div>
+        <h1>Interface principale</h1>
+
+        {/* 🔽 Appel avec fonction en prop */}
+        <Car
+          couleur="rouge"
+          marque="Toyota Matrix"
+          kilometrage="100 km"
+          demarrer={this.handleDemarrer}
+        />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+<br/>
+
+## Q5. Ajouter 4 boutons dans `Car.js` pour afficher les props
+
+### 📄 Fichier : `src/Car.js` (code complet avec interactions)
+
+```jsx
+import React from 'react';
+
+class Car extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Car</h2>
+
+        <p>Couleur : {this.props.couleur}</p>
+        <p>Marque : {this.props.marque}</p>
+        <p>Kilométrage : {this.props.kilometrage}</p>
+
+        {/* 🔽 Boutons pour afficher les props */}
+        <button onClick={() => console.log(this.props.couleur)}>
+          Afficher la couleur
+        </button>
+
+        <button onClick={() => console.log(this.props.marque)}>
+          Afficher la marque
+        </button>
+
+        <button onClick={() => console.log(this.props.kilometrage)}>
+          Afficher le kilométrage
+        </button>
+
+        {/* 🔽 Bouton pour appeler la fonction demarrer */}
+        <button onClick={this.props.demarrer}>
+          Démarrer
+        </button>
+      </div>
+    );
+  }
+}
+
+export default Car;
+```
 
