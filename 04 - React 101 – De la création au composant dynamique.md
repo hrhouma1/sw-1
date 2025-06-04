@@ -25,14 +25,20 @@
 
 
 
-# Prérequis
+
+
+<h1 id="prerequis">Prérequis</h1>
+
+
+
 
 * **Node.js** : [https://nodejs.org/en/download](https://nodejs.org/en/download)
 * **Visual Studio Code** : [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 <br/>
 
-# Stack
+<h1 id="stack">Stack Web – Architecture MERN, LAMP, MEAN...</h1>
+
 
 Une stack web classique se compose :
 
@@ -52,7 +58,7 @@ Une stack web classique se compose :
 
 <br/>
 
-# Laboratoire – Introduction à la Stack MERN
+# <h1 id="intro-mern">Laboratoire – Introduction à la Stack MERN</h1>
 
 * **M** = MongoDB
 * **E** = Express (backend léger avec Node.js)
@@ -61,7 +67,9 @@ Une stack web classique se compose :
 
 <br/>
 
-# Historique de React
+
+
+# <h1 id="historique-react">Historique de React et concepts clés</h1>
 
 * Bibliothèque JavaScript développée par **Facebook (Meta)** en 2013
 * Grande mise à jour en 2019 avec **Hooks**
@@ -70,8 +78,15 @@ Une stack web classique se compose :
 
 <br/>
 
-# Étape 1 – Installer Node.js et créer une application
 
+
+
+# <h1 id="etape1-node">Étape 1 – Installer Node.js et créer une application</h1>
+
+
+* **Node.js** : [https://nodejs.org/en/download](https://nodejs.org/en/download)
+* **Visual Studio Code** : [https://code.visualstudio.com/](https://code.visualstudio.com/)
+  
 ```bash
 node -v
 npm -v
@@ -85,14 +100,22 @@ npm start
 
 <br/>
 
-# Étape 2 – Installer Visual Studio Code
+
+
+
+# <h1 id="etape2-vscode">Étape 2 – Installer Visual Studio Code</h1>
+
 
 * Télécharger : [https://code.visualstudio.com/](https://code.visualstudio.com/)
 * Ouvrir le dossier du projet `demo1`
 
 <br/>
 
-# Étape 3 – Explorer le projet
+
+
+
+
+# <h1 id="etape3-exploration">Étape 3 – Explorer la structure du projet</h1>
 
 * `node_modules/` : dépendances
 * `public/` : contient `index.html`
@@ -102,7 +125,11 @@ npm start
 
 <br/>
 
-# Étape 4 – Ajouter des extensions
+
+
+
+# <h1 id="etape4-extensions">Étape 4 – Ajouter des extensions utiles</h1>
+
 
 * **React Developer Tools (Chrome)**
 * **Standard JS** (VS Code)
@@ -110,13 +137,20 @@ npm start
 
 <br/>
 
-# Étape 5 – Nettoyer le projet
+
+
+
+# <h1 id="etape5-nettoyage">Étape 5 – Nettoyer le projet React</h1>
 
 Dans `src/index.js`, enlever `<React.StrictMode>`
 Dans `src/App.js`, supprimer `logo.svg` et les imports inutiles
 
 <br/>
-# Étape 6 – Comprendre les composants React
+
+
+
+
+# <h1 id="etape6-composants">Étape 6 – Comprendre les composants React</h1>
 
 Deux types :
 
@@ -125,7 +159,11 @@ Deux types :
 
 <br/>
 
-# Étape 7 – Transformer un composant fonctionnel en classe
+
+
+
+# <h1 id="etape7-classes">Étape 7 – Transformer un composant fonctionnel en classe</h1>
+
 
 Avant :
 
@@ -147,9 +185,10 @@ class App extends Component {
 }
 ```
 
----
 
-# Étape 8 – Ajouter des composants sans état (stateless)
+
+
+# <h1 id="etape8-stateless">Étape 8 – Ajouter des composants stateless</h1>
 
 ```jsx
 const College = () => <div>Je suis un college</div>;
@@ -169,7 +208,13 @@ class App extends Component {
 
 <br/>
 
-# Étape 9 – Props simples
+
+
+
+
+
+# <h1 id="etape9-props">Étape 9 – Props simples</h1>
+
 
 ```jsx
 const College = ({ categorie, endroit }) => (
@@ -192,7 +237,12 @@ class App extends Component {
 
 <br/>
 
-# Étape 10 – `props.children`
+
+
+
+# <h1 id="etape10-children">Étape 10 – Utiliser props.children</h1>
+
+
 
 ```jsx
 <College categorie="public" endroit="Montréal">
@@ -211,7 +261,11 @@ const College = ({ categorie, endroit, children }) => (
 
 <br/>
 
-# Étape 11 – Deuxième façon d'utiliser `props`
+
+
+
+# <h1 id="etape11-props-alternative">Étape 11 – Autre syntaxe avec props</h1>
+
 
 ```jsx
 const College = (props) => (
@@ -222,9 +276,10 @@ const College = (props) => (
 );
 ```
 
----
 
-# Étape 12 – Travailler avec `state`
+
+
+# <h1 id="etape12-state">Étape 12 – Travailler avec state</h1>
 
 ```jsx
 class App extends Component {
@@ -241,9 +296,14 @@ class App extends Component {
 }
 ```
 
-<br/>
 
-# Étape 13 – Modifier l’état avec un bouton
+
+
+
+# <h1 id="etape13-setstate">Étape 13 – Modifier l’état avec setState</h1>
+
+
+
 
 ```jsx
 class App extends Component {
@@ -266,7 +326,10 @@ class App extends Component {
 
 <br/>
 
-# À Venir
+
+
+# <h1 id="etape14-suite">À venir – Hooks, routing, formulaires…</h1>
+
 
 * Étape 14 – Props fonctions (ex: bouton qui appelle une fonction parente)
 * Étape 15 – Champs dynamiques (`input`, `onChange`)
