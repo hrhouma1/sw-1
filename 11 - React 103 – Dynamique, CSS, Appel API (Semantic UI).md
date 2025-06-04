@@ -1,7 +1,7 @@
 # <h1 id="react-103">11 - React 103 – Dynamique, CSS, Appel API (Semantic UI)</h1>
 
 
-## <h2 id="etape6">Étape 6 – Ajouter de la dynamicité (States)</h2>
+# <h2 id="etape6">Étape 6 – Ajouter de la dynamicité (States)</h2>
 
 ###  Objectif :
 
@@ -58,7 +58,7 @@ class Recherche extends Component {
 }
 ```
 
----
+<br/>
 
 ## <h2 id="etape7">Étape 7 – Ajout de style avec CSS</h2>
 
@@ -79,11 +79,11 @@ Puis l'importer :
 import './Recherche.css';
 ```
 
----
+<br/>
 
 ## <h2 id="etape8">Étape 8 – Préparation appel API</h2>
 
-### 🔄 Transformer `App` en classe :
+###  Transformer `App` en classe :
 
 ```jsx
 import { Component } from 'react';
@@ -105,11 +105,11 @@ export default App;
 
 > 💡 Ajoute `state = { data: [], error: '' }` dans App pour manipuler les données API.
 
----
+<br/>
 
 ## <h2 id="etape9">Étape 9 – Appel API et liaison dynamique</h2>
 
-### 🔄 Nouvelle version de `App.js` :
+###  Nouvelle version de `App.js` :
 
 ```jsx
 import { Component } from 'react';
@@ -144,9 +144,9 @@ class App extends Component {
 export default App;
 ```
 
----
+<br/>
 
-### 🔄 Nouvelle version `Recherche.js` :
+###  Nouvelle version `Recherche.js` :
 
 ```jsx
 import { Component } from "react";
