@@ -7,8 +7,9 @@
 3. Zippez le projet `.zip` ou `.rar`
 4. Envoyez-moi le fichier compressé
 5. Je dézippe, j’ouvre avec VS Code
-6. Dans le terminal, je tape :  
-   ```bash
+6. Dans le terminal, je tape :
+
+```bash
    npm install
 ````
 
