@@ -47,3 +47,265 @@ src/
 ```
 
 
+<br/>
+
+# Correction: 
+
+Chaque étape précise :
+
+* Le **fichier concerné**
+* Le **code complet**
+* Les **modifications localisées** avec `// 🔽 Ajout`
+
+<br/>
+
+## Q1. Créer une application React avec `create-react-app`
+
+```bash
+npx create-react-app exercice-props
+cd exercice-props
+npm start
+```
+
+<br/>
+
+## Q2. Ajouter un composant `Recherche.js` (classe ou fonction)
+
+### Fichier : `src/Recherche.js` (version classe)
+
+```jsx
+import React from 'react';
+
+class Recherche extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Recherche</h2>
+      </div>
+    );
+  }
+}
+
+export default Recherche;
+```
+
+<br/>
+
+## Q3. Ajouter un composant `Composant1.js` (classe)
+
+### Fichier : `src/Composant1.js`
+
+```jsx
+import React from 'react';
+
+class Composant1 extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant 1 (classe)</h2>
+      </div>
+    );
+  }
+}
+
+export default Composant1;
+```
+
+<br/>
+
+## Q4. Ajouter un composant `Composant2.js` (fonction)
+
+### 📄 Fichier : `src/Composant2.js`
+
+```jsx
+import React from 'react';
+
+const Composant2 = () => {
+  return (
+    <div>
+      <h2>Composant 2 (fonction)</h2>
+    </div>
+  );
+};
+
+export default Composant2;
+```
+
+<br/>
+
+## Q5–Q7. Appeler les composants dans `App.js` sans props
+
+###  Fichier : `src/App.js`
+
+```jsx
+import React from 'react';
+import Recherche from './Recherche';
+import Composant1 from './Composant1';
+import Composant2 from './Composant2';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Application principale</h1>
+
+        {/* 🔽 Appels sans props */}
+        <Recherche />
+        <Composant1 />
+        <Composant2 />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+<br/>
+
+## Q8–Q10. Ajouter les props `a`, `b`, `c` (type string)
+
+###  Fichier : `src/App.js` (mise à jour)
+
+```jsx
+import React from 'react';
+import Recherche from './Recherche';
+import Composant1 from './Composant1';
+import Composant2 from './Composant2';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Application principale</h1>
+
+        {/* 🔽 Ajout de la prop a */}
+        <Recherche a="Bienvenue dans Recherche" />
+
+        {/* 🔽 Ajout de la prop b */}
+        <Composant1 b="Ceci est Composant1" />
+
+        {/* 🔽 Ajout de la prop c */}
+        <Composant2 c="Voici Composant2" />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+<br/>
+
+## Q11. Ajouter une prop `action` (fonction) à `Recherche`
+
+### 📄 Fichier : `src/App.js` (ajout final)
+
+```jsx
+<Recherche
+  a="Bienvenue dans Recherche"
+  action={() => console.log("Fonction appelée depuis App")}
+/>
+```
+
+<br/>
+
+## Q12. Afficher la prop `a` dans `Recherche.js`
+
+###  Fichier : `src/Recherche.js` (mise à jour)
+
+```jsx
+import React from 'react';
+
+class Recherche extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Recherche</h2>
+
+        {/* 🔽 Affichage de la prop a */}
+        <p>{this.props.a}</p>
+      </div>
+    );
+  }
+}
+
+export default Recherche;
+```
+
+<br/>
+
+## Q13. Appeler la fonction `action` dans `Recherche.js`
+
+###  Fichier : `src/Recherche.js` (final)
+
+```jsx
+import React from 'react';
+
+class Recherche extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant Recherche</h2>
+
+        <p>{this.props.a}</p>
+
+        {/* 🔽 Appel de la fonction passée en props */}
+        <button onClick={this.props.action}>
+          Lancer l'action
+        </button>
+      </div>
+    );
+  }
+}
+
+export default Recherche;
+```
+
+<br/>
+
+## Bonus – Affichage des props dans Composant1 et Composant2
+
+###  Fichier : `src/Composant1.js` (avec affichage de `b`)
+
+```jsx
+import React from 'react';
+
+class Composant1 extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Composant 1 (classe)</h2>
+
+        {/* 🔽 Affichage de la prop b */}
+        <p>{this.props.b}</p>
+      </div>
+    );
+  }
+}
+
+export default Composant1;
+```
+
+<br/>
+
+###  Fichier : `src/Composant2.js` (avec affichage de `c`)
+
+```jsx
+import React from 'react';
+
+const Composant2 = (props) => {
+  return (
+    <div>
+      <h2>Composant 2 (fonction)</h2>
+
+      {/* 🔽 Affichage de la prop c */}
+      <p>{props.c}</p>
+    </div>
+  );
+};
+
+export default Composant2;
+```
+
+
