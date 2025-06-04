@@ -47,12 +47,8 @@ On souhaite améliorer le composant `Car` de l'exercice précédent pour qu’il
 
 
 
-
-
-
-
-
 <br/ >
+
 
 # Correction de l'exercice 4 : Props dynamiques et `state`
 
