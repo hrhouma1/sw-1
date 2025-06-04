@@ -1,4 +1,4 @@
-# <h1 id="react-103">11 - React 103 – Dynamique, CSS, Appel API (Semantic UI)</h1>
+# <h1 id="react-103"> React 103 – Dynamique, CSS, Appel API (Semantic UI)</h1>
 
 
 # <h2 id="etape6">Étape 6 – Ajouter de la dynamicité (States)</h2>
