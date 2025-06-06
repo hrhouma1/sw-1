@@ -2,6 +2,7 @@
 
 # Passer des props du parent vers l’enfant
 
+<br/>
 
 ### **Exercice 1 – Afficher un prénom et un âge**
 
@@ -12,7 +13,7 @@ Créez un composant `App` qui contient un composant `Profil`.
 Le composant `Profil` doit recevoir deux props : un prénom (`"Sophie"`) et un âge (`22`) puis les afficher dans une phrase complète, comme :
 `"Sophie a 22 ans."`
 
----
+<br/>
 
 ### **Exercice 2 – Afficher les informations d’un produit**
 
@@ -27,7 +28,7 @@ Le composant `Produit` reçoit les props suivantes :
   Dans le composant enfant, affichez :
   `"Produit : Ordinateur portable – Prix : 999.99 $"`
 
----
+<br/>
 
 ### **Exercice 3 – Afficher une couleur dans un bloc**
 
@@ -39,6 +40,8 @@ Ce composant reçoit une prop `couleur`, par exemple `"lightblue"` ou `"yellow"`
 Le composant `BoiteColorée` doit afficher un `div` avec une largeur et hauteur de 150px, et un fond de la couleur passée en prop. Le texte à l’intérieur peut être :
 `"Ceci est une boîte de couleur : lightblue"`
 
+<br/>
+<br/>
 
 # Passer des props de l'enfant vers le parent
 
@@ -52,7 +55,7 @@ L’enfant contient un bouton `"Envoyer Bonjour"`.
 Quand on clique, l’enfant appelle une fonction `envoyerMessage` reçue du parent avec `"Bonjour"` en paramètre.
 Le parent affiche alors ce message dans une balise `<p>`.
 
----
+<br/>
 
 ### **Exercice 5 – Envoi d’un nombre cliqué**
 
@@ -64,7 +67,7 @@ Le composant enfant affiche trois boutons : `10`, `20`, `30`.
 Quand on clique sur un des boutons, le nombre est envoyé au parent via une fonction callback.
 Le parent affiche : `"Nombre choisi : 20"` (ou 10 ou 30 selon le clic).
 
----
+<br/>
 
 ### **Exercice 6 – Formulaire contrôlé avec remontée de valeur**
 
