@@ -2,7 +2,7 @@
 
 ### <h2 id="objectif-general">Objectif général</h2>
 
-Vous devez développer une **application React** qui consomme une **API publique REST**, en affichant dynamiquement les résultats dans l’interface utilisateur, tout en gérant les erreurs côté client de manière professionnelle.
+- *Vous devez développer une **application React** qui consomme une **API publique REST**, en affichant dynamiquement les résultats dans l’interface utilisateur, tout en gérant les erreurs côté client de manière professionnelle.*
 
 
 
@@ -57,12 +57,12 @@ Dans le cadre de cet examen, vous devrez démontrer votre capacité à :
 ### <h2 id="modalites">Modalités</h2>
 
 * Travail **individuel obligatoire**
-* Langage : **JavaScript avec React 18+**
+* Langage : **JavaScript avec React**
 * Librairies autorisées : `axios`, `semantic-ui`, `bootstrap`, etc.
 * Gestion d'état : `useState`, `useEffect` (Redux non requis)
 * Git obligatoire (local ou GitHub)
 
----
+
 
 ### <h2 id="date-limite">Date limite de remise</h2>
 
