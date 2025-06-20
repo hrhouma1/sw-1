@@ -66,7 +66,7 @@ Dans le cadre de cet examen, vous devrez démontrer votre capacité à :
 
 ### <h2 id="date-limite">Date limite de remise</h2>
 
-**Vendredi 6 juin 2025 à 23h59**
+**Vendredi 6 juillet 2025 à 23h59**
 → Toute remise tardive sans justification recevra la note de **0**.
 
 
