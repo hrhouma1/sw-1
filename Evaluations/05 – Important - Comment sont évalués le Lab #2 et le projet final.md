@@ -84,3 +84,31 @@ Bon courage à tous !
 
 
 
+
+# <h1 id="technologies-autorisées">Choix technologiques autorisés pour le TP2 et le Projet intégrateur (Stack)</h1>
+
+Le tableau ci-dessous dresse la liste **des options officiellement acceptées** pour chaque composant de votre stack.
+Vous êtes libres de combiner les technologies d’une même ligne (ex. Prisma + Neon + NextAuth) ; toute solution hors tableau doit être validée au préalable.
+
+| Couche / Composant                        | Options autorisées                                                                                                                                                                                                        | Remarques et exigences                                                                                                  |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Base de données**                       | - **Neon (PostgreSQL)**<br>- Supabase DB (PostgreSQL)<br>- Xata (base KV/PostgreSQL)<br>- SQLite (local, fichier `.db` dans le repo)<br>- PostgreSQL local (Docker ou installation native)                                | Utilisez les plans gratuits quand c’est possible. Fournissez un script ou des migrations pour la création des tables.   |
+| **ORM / Accès aux données**               | - **Prisma** (compatible Neon, Supabase, SQLite, Postgres local)<br>- **Drizzle ORM**<br>- Kysely (optionnel)<br>- TypeORM (optionnel)                                                                                    | Fournir le fichier `schema.prisma`, `drizzle.config.ts`, ou équivalent. Les migrations doivent être traçables dans Git. |
+| **Backend / API**                         | - **Next.js App Router** (routes API intégrées)<br>- Express.js (si vous choisissez un front React séparé)<br>- Fastify (optionnel)<br>- Strapi (uniquement pour la partie Admin, si vous préférez une solution headless) | L’option par défaut et recommandée reste **Next.js full-stack** (« un seul projet »).                                   |
+| **Authentification**                      | - **NextAuth.js** (JWT ou Sessions)<br>- Auth.js<br>- Auth0 (plan gratuit)<br>- **Clerk**<br>- Custom JWT + cookies signés                                                                                                | Le middleware de protection des routes privées est obligatoire.                                                         |
+| **Paiement**                              | - **Stripe Checkout + Webhook** (imposé)                                                                                                                                                                                  | La vérification de signature est obligatoire (`stripe.webhooks.constructEvent`).                                        |
+| **Stockage des images**                   | - Répertoire local `public/uploads` (par défaut)<br>- Cloudinary (plan gratuit)<br>- Supabase Storage<br>- AWS S3 (Free Tier)                                                                                             | Les URL publiques doivent être stockées en base.                                                                        |
+| **Documentation API**                     | - Collection **Postman**<br>- **Swagger / OpenAPI** (ex. `swagger-ui-express`)                                                                                                                                            | La documentation doit couvrir **tous** les endpoints exposés.                                                           |
+| **Interface administrateur**              | - Pages Next.js protégées (`/admin/*`)<br>- Strapi Admin (si Strapi choisi comme backend)<br>- React Admin (optionnel)                                                                                                    | L’accès doit être restreint au rôle `admin`.                                                                            |
+| **Front-end**                             | - React + Next.js (pages App Router)<br>- React + Vite (si backend distinct)<br>- React Admin (pour l’admin si besoin)                                                                                                    | Vos appels API doivent respecter les conventions REST décrites dans l’énoncé.                                           |
+| **Déploiement (facultatif pour la note)** | - Vercel<br>- Render<br>- Railway<br>- Supabase Hosting                                                                                                                                                                   | Fournir une URL publique fonctionnelle (mode test Stripe).                                                              |
+
+**Règle générale :**
+
+* Choisissez **une option par ligne** (ex. Prisma + Neon + NextAuth + Stripe + Cloudinary).
+* Déclarez vos choix dans le `README.md` et fournissez les instructions d’installation correspondantes.
+* Toute technologie non listée doit être approuvée par l’enseignant avant utilisation.
+
+Vous disposez ainsi d’un cadre clair pour sélectionner votre stack et garantir la cohérence de vos livrables.
+
+
