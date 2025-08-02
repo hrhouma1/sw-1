@@ -232,3 +232,56 @@ Afin de garantir la cohérence pédagogique et vous éviter de développer deux 
 Vous développez **un seul projet complet**, mais il sera évalué **en deux étapes**, chacune avec ses propres critères. Vous devez donc structurer votre travail de manière professionnelle et progressive.
 
 
+<br/>
+
+
+# Annexe 1 - sites gratuits utiles pour votre projet
+
+
+<h1 id="ressources-gratuites-utiles-pour-le-projet">Ressources gratuites utiles pour le projet</h1>
+
+###  Images gratuites libres de droits (galerie publique)
+
+| Site                         | Lien                                                           | Utilisation autorisée                                               |
+| ---------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Pexels**                   | [https://www.pexels.com/fr-fr/](https://www.pexels.com/fr-fr/) | Photos et vidéos haute qualité gratuites, usage commercial autorisé |
+| **Pixabay**                  | [https://pixabay.com/](https://pixabay.com/)                   | Photos, vidéos, illustrations, vecteurs libres de droits            |
+| **Unsplash**                 | [https://unsplash.com/](https://unsplash.com/)                 | Banque d’images gratuite, très populaire pour les galeries          |
+| **Freepik** (section photos) | [https://www.freepik.com/](https://www.freepik.com/)           | Images gratuites avec attribution (ou premium sans attribution)     |
+
+
+###  Icônes, pictogrammes et visuels d’interface
+
+| Site              | Lien                                                                                     | Type d’icônes                                                                            |
+| ----------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **React Icons**   | [https://react-icons.github.io/react-icons/](https://react-icons.github.io/react-icons/) | Intégration directe de packs d’icônes dans React (FontAwesome, Feather, Heroicons, etc.) |
+| **Font Awesome**  | [https://fontawesome.com/](https://fontawesome.com/)                                     | Bibliothèque d’icônes complète ; version gratuite suffisante                             |
+| **Feather Icons** | [https://feathericons.com/](https://feathericons.com/)                                   | Icônes SVG simples, élégantes et faciles à intégrer                                      |
+| **Flaticon**      | [https://www.flaticon.com/fr/](https://www.flaticon.com/fr/)                             | Plus de 3 millions d’icônes (SVG, PNG), attribution requise pour usage gratuit           |
+| **Heroicons**     | [https://heroicons.com/](https://heroicons.com/)                                         | Icônes Tailwind officielles (SVG), idéales pour interfaces modernes                      |
+| **Lucide.dev**    | [https://lucide.dev/](https://lucide.dev/)                                               | Alternative moderne à Feather, SVG propres et adaptables                                 |
+| **Tabler Icons**  | [https://tabler-icons.io/](https://tabler-icons.io/)                                     | Icônes vectorielles légères, parfaites pour tableaux de bord/admin                       |
+
+
+###  Mockups, UI kits et ressources visuelles complémentaires
+
+| Site                     | Lien                                                                                       | Utilisation                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| **Freepik (UI/Mockups)** | [https://www.freepik.com/](https://www.freepik.com/)                                       | UI kits, fonds, mockups web, assets à intégrer dans le design      |
+| **UIverse**              | [https://uiverse.io/](https://uiverse.io/)                                                 | Composants CSS/HTML open-source pour embellir les interfaces       |
+| **CSS Scan**             | [https://getcssscan.com/css-buttons-examples](https://getcssscan.com/css-buttons-examples) | Boutons CSS tout faits à copier/coller pour améliorer l’esthétique |
+
+
+
+###  Outils de dev gratuits utiles
+
+| Outil            | Lien                                           | Usage                                                        |
+| ---------------- | ---------------------------------------------- | ------------------------------------------------------------ |
+| **Neon**         | [https://neon.tech/](https://neon.tech/)       | Base PostgreSQL cloud gratuite (pour Prisma ou Drizzle)      |
+| **Railway**      | [https://railway.app/](https://railway.app/)   | Hébergement backend + DB simple et gratuit                   |
+| **Supabase**     | [https://supabase.com/](https://supabase.com/) | Auth + Postgres + Storage (alternative Firebase open source) |
+| **Clerk (Auth)** | [https://clerk.dev/](https://clerk.dev/)       | Authentification clé-en-main (OAuth, sessions, JWT)          |
+| **Xata**         | [https://xata.io/](https://xata.io/)           | Base de données serverless + recherche intégrée              |
+
+
+
