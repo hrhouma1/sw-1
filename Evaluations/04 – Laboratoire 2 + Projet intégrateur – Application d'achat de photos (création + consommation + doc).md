@@ -170,11 +170,9 @@ Admin --> API
 **Vous pouvez débuter le TP dès maintenant. Bonne réalisation !**
 
 
-Voici un texte **clair, professionnel et structuré** que tu peux remettre aux étudiants ou insérer dans ton énoncé pour expliquer la fusion des deux évaluations (Laboratoire 2 + Projet intégrateur) tout en respectant les objectifs pédagogiques distincts :
+<br/>
 
----
-
-<h1 id="structure-evaluations-tp">Structure des évaluations – TP unique pour deux composantes du cours</h1>
+# <h1 id="structure-evaluations-tp"> Annexe 1 - Structure des évaluations – TP unique pour deux composantes du cours</h1>
 
 Dans le cadre de ce cours, vous réaliserez un **projet unique**, mais celui-ci servira à évaluer **deux composantes distinctes** :
 
@@ -192,7 +190,7 @@ Comme annoncé, le Laboratoire #2 est centré sur la **création de vos propres 
 **→ Cette partie représente la 3e activité pratique du cours.**
 **→ Elle comptera pour 20 % de votre note finale.**
 
----
+
 
 ### 2. Projet final intégrateur – Création **+ consommation + documentation** (40 %)
 
@@ -210,7 +208,7 @@ Le **projet intégrateur** est la **suite directe** du Laboratoire 2. Il vous de
 
 **→ Cette partie comptera pour 40 % de votre note finale.**
 
----
+
 
 ### Pourquoi un seul projet pour deux évaluations ?
 
@@ -219,7 +217,7 @@ Afin de garantir la cohérence pédagogique et vous éviter de développer deux 
 * **Les étapes déjà terminées** (authentification, CRUD, API sécurisées, etc.) **seront évaluées pour le Laboratoire #2**
 * **Les extensions fonctionnelles** (Stripe, Webhook, documentation, présentation) **seront évaluées dans le cadre du projet intégrateur**
 
----
+
 
 ### Résumé – Pondération
 
@@ -228,10 +226,9 @@ Afin de garantir la cohérence pédagogique et vous éviter de développer deux 
 | **Laboratoire #2 – Partie 3 pratique**  | Création de services web (auth, API, CRUD, admin)                     | 20 %        |
 | **Projet intégrateur – Épreuve finale** | Consommation de Stripe + Webhook + documentation + présentation orale | 40 %        |
 
----
+
 
 **Conclusion :**
 Vous développez **un seul projet complet**, mais il sera évalué **en deux étapes**, chacune avec ses propres critères. Vous devez donc structurer votre travail de manière professionnelle et progressive.
 
-Souhaites-tu aussi une version téléchargeable PDF ou Word avec mise en forme pour l’ajouter à Moodle, Lea ou Thinkific ?
 
