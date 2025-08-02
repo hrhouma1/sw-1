@@ -1,4 +1,4 @@
-<h1 id="tp-nextjs-photos-stripe">TP – Développement d'une application d'achat de photos (Next.js + Stripe)</h1>
+<h1 id="tp-nextjs-photos-stripe">Évaluation 2 – Développement d'une application d'achat de photos (Next.js + Stripe)</h1>
 
 # 1 - Introduction au projet
 
