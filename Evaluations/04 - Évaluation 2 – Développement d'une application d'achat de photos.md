@@ -168,3 +168,70 @@ Admin --> API
 
 
 **Vous pouvez débuter le TP dès maintenant. Bonne réalisation !**
+
+
+Voici un texte **clair, professionnel et structuré** que tu peux remettre aux étudiants ou insérer dans ton énoncé pour expliquer la fusion des deux évaluations (Laboratoire 2 + Projet intégrateur) tout en respectant les objectifs pédagogiques distincts :
+
+---
+
+<h1 id="structure-evaluations-tp">Structure des évaluations – TP unique pour deux composantes du cours</h1>
+
+Dans le cadre de ce cours, vous réaliserez un **projet unique**, mais celui-ci servira à évaluer **deux composantes distinctes** :
+
+### 1. Laboratoire #2 – Évaluation de la **création de services web** (20 %)
+
+Comme annoncé, le Laboratoire #2 est centré sur la **création de vos propres services web**, c’est-à-dire :
+
+* La mise en place de votre propre API (Next.js API Routes)
+* L’authentification utilisateur (register/login)
+* Le développement d’un CRUD sécurisé sur les photos
+* La gestion des galeries (publique et privée)
+* La structuration correcte des routes RESTful
+* L’interface d’administration (avec gestion des rôles)
+
+**→ Cette partie représente la 3e activité pratique du cours.**
+**→ Elle comptera pour 20 % de votre note finale.**
+
+---
+
+### 2. Projet final intégrateur – Création **+ consommation + documentation** (40 %)
+
+Le **projet intégrateur** est la **suite directe** du Laboratoire 2. Il vous demandera de compléter et finaliser l'application avec :
+
+* L’intégration complète du service externe **Stripe** (paiement en ligne)
+* La gestion du Webhook Stripe (consommation entrante)
+* L’attribution dynamique des photos achetées
+* L’ajout de **documentation professionnelle** (Postman ou Swagger)
+* La présentation finale de votre projet :
+
+  * Code complet et fonctionnel
+  * Présentation orale (5 à 10 minutes par équipe)
+  * Diaporama (PPT) synthétisant le fonctionnement et les technologies utilisées
+
+**→ Cette partie comptera pour 40 % de votre note finale.**
+
+---
+
+### Pourquoi un seul projet pour deux évaluations ?
+
+Afin de garantir la cohérence pédagogique et vous éviter de développer deux projets artificiellement séparés, **vous remettrez un seul projet**. Mais :
+
+* **Les étapes déjà terminées** (authentification, CRUD, API sécurisées, etc.) **seront évaluées pour le Laboratoire #2**
+* **Les extensions fonctionnelles** (Stripe, Webhook, documentation, présentation) **seront évaluées dans le cadre du projet intégrateur**
+
+---
+
+### Résumé – Pondération
+
+| Évaluation                              | Contenu évalué                                                        | Pondération |
+| --------------------------------------- | --------------------------------------------------------------------- | ----------- |
+| **Laboratoire #2 – Partie 3 pratique**  | Création de services web (auth, API, CRUD, admin)                     | 20 %        |
+| **Projet intégrateur – Épreuve finale** | Consommation de Stripe + Webhook + documentation + présentation orale | 40 %        |
+
+---
+
+**Conclusion :**
+Vous développez **un seul projet complet**, mais il sera évalué **en deux étapes**, chacune avec ses propres critères. Vous devez donc structurer votre travail de manière professionnelle et progressive.
+
+Souhaites-tu aussi une version téléchargeable PDF ou Word avec mise en forme pour l’ajouter à Moodle, Lea ou Thinkific ?
+
