@@ -1,14 +1,14 @@
 <h1 id="tp-nextjs-photos-stripe">TP – Développement d'une application d'achat de photos (Next.js + Stripe)</h1>
 
-## Introduction au projet
+# 1 - Introduction au projet
 
 Dans ce TP, vous allez développer une application web complète permettant à des utilisateurs de vendre et d'acheter des photos. Chaque utilisateur pourra créer un compte, gérer sa propre galerie de photos et acheter les photos mises en vente par d'autres utilisateurs.
 
 Vous allez manipuler des services web en tant que créateur (développer une API) et consommateur (intégration d'un service tiers : Stripe).
 
----
 
-## Objectifs pédagogiques
+
+# 2 - Objectifs pédagogiques
 
 À la fin de ce TP, vous serez capable de :
 
@@ -18,9 +18,9 @@ Vous allez manipuler des services web en tant que créateur (développer une API
 * Consommer un service web externe tiers (API Stripe).
 * Mettre en place une documentation claire de votre API (Postman ou Swagger).
 
----
 
-## Présentation des services web
+
+# 3 - Présentation des services web
 
 Un **service web** est une application logicielle accessible via internet, permettant à deux systèmes de communiquer en utilisant des requêtes HTTP standardisées (GET, POST, PUT, DELETE) et en échangeant des données (JSON, XML).
 
@@ -29,9 +29,9 @@ Dans ce TP, vous allez utiliser deux approches des services web :
 * **Création (Producteur)** : développer votre propre API REST.
 * **Consommation (Consommateur)** : utiliser l’API externe Stripe.
 
----
 
-## Table explicative – Les services web dans ce TP
+
+# 4 - Table explicative – Les services web dans ce TP
 
 | Fonction du projet                 | Type de service web  | Votre rôle            | Outils utilisés                 | Exemple concret dans le TP                             |
 | ---------------------------------- | -------------------- | --------------------- | ------------------------------- | ------------------------------------------------------ |
@@ -45,9 +45,9 @@ Dans ce TP, vous allez utiliser deux approches des services web :
 | Documentation API                  | Documentation        | Documenteur           | Postman ou Swagger              | Collection Postman ou Swagger `/api/docs`              |
 | Sécurité des services              | Sécurisation         | Implémenteur sécurité | JWT, middleware Next.js         | Middleware (`auth.js`)                                 |
 
----
 
-## Diagramme d'architecture du projet
+
+# 5 - Diagramme d'architecture du projet
 
 ```mermaid
 graph TD
@@ -77,11 +77,11 @@ StripeAPI --> Webhook
 Admin --> API
 ```
 
----
 
-## Spécifications techniques détaillées du projet
 
-### 1. Fonctionnalités requises
+# 6 - Spécifications techniques détaillées du projet
+
+### 6.1. Fonctionnalités requises
 
 * Authentification utilisateur complète (inscription, connexion, sessions sécurisées).
 * Chaque utilisateur peut gérer (ajouter, modifier, supprimer) ses propres photos.
@@ -90,7 +90,7 @@ Admin --> API
 * Galerie personnelle avec photos uploadées et achetées.
 * Interface admin permettant de modérer les contenus et utilisateurs.
 
-### 2. Routes API obligatoires (`app/api/...`)
+### 6.2. Routes API obligatoires (`app/api/...`)
 
 | Route                | Méthode HTTP | Description                         |
 | -------------------- | ------------ | ----------------------------------- |
@@ -104,7 +104,7 @@ Admin --> API
 | `/api/checkout`      | POST         | Créer session paiement Stripe       |
 | `/api/webhook`       | POST         | Traitement du webhook Stripe        |
 
-### 3. Partie administration (`admin`)
+### 6.3. Partie administration (`admin`)
 
 | Route                   | Méthode HTTP | Description (réservé admin) |
 | ----------------------- | ------------ | --------------------------- |
@@ -113,13 +113,13 @@ Admin --> API
 | `/api/admin/photos`     | GET          | Toutes les photos           |
 | `/api/admin/photos/:id` | DELETE       | Supprimer photo             |
 
-### 4. Documentation API
+### 6.4. Documentation API
 
 * Documenter vos endpoints via une collection Postman (recommandé) ou Swagger (bonus).
 
----
 
-## Contraintes techniques imposées
+
+# 7 - Contraintes techniques imposées
 
 * Next.js 13/14 App Router obligatoire.
 * Authentification sécurisée avec JWT (NextAuth autorisé).
@@ -128,16 +128,16 @@ Admin --> API
 * Base de données au choix (SQLite, PostgreSQL).
 * Interface admin protégée par vérification de rôle utilisateur.
 
----
 
-## Livrables exigés
+
+# 8 - Livrables exigés
 
 * Code complet sur GitHub (avec `.env.example` contenant clés Stripe en test).
 * Fichier `README.md` détaillé expliquant comment installer et exécuter l'application.
 * Documentation Postman ou Swagger des API.
 * Démonstration fonctionnelle (vidéo courte montrant inscription, gestion photos, achat Stripe).
 
----
+
 
 ## Bonus possibles (facultatifs)
 
@@ -146,7 +146,7 @@ Admin --> API
 * Stockage des images via Cloudinary.
 * Gestion avancée des erreurs API.
 
----
+
 
 ## Évaluation du TP
 
@@ -158,7 +158,7 @@ Admin --> API
 | Interface d'administration sécurisée   | 10 %        |
 | Démonstration et livrables             | 10 %        |
 
----
+
 
 ## Durée du TP
 
