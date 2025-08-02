@@ -4,7 +4,7 @@ Bonjour à toutes et à tous,
 
 Afin d'éviter toute confusion et clarifier définitivement l’organisation des évaluations dans le cours, voici des précisions importantes concernant le **Laboratoire #2** et le **Projet intégrateur final** :
 
-### Situation initiale annoncée en classe
+# 1 - Situation annoncée en classe
 
 | Évaluation         | Contenu promis initialement                                               | Pondération |
 | ------------------ | ------------------------------------------------------------------------- | ----------- |
@@ -43,3 +43,44 @@ Afin d'éviter toute confusion et clarifier définitivement l’organisation des
 N'hésitez pas à me contacter si vous avez des questions complémentaires ou besoin d'une clarification.
 
 Bon courage à tous !
+
+
+
+
+# 2 - Grilles d’évaluation 
+
+> Ces deux tableaux sont indépendants :
+> – **TP2** évalue exclusivement la **création** des services web.
+> – **Projet intégrateur final** évalue l’ensemble du projet (création finalisée + consommation Stripe + documentation + présentation).
+
+
+
+# 2.1. Grille d’évaluation — **TP2 : Création des services web**
+
+| # | Critère évalué                                                                                     | Poids |
+| - | -------------------------------------------------------------------------------------------------- | ----: |
+| 1 | Modélisation et schéma Prisma (User, Photo, rôles)                                                 |  20 % |
+| 2 | Routes API Auth : `/api/register`, `/api/login`, `/api/logout`  (validation, hashage mot de passe) |  20 % |
+| 3 | Routes CRUD Photos : `/api/photos`, `/api/photos/:id` (upload, update, delete sécurisés)           |  20 % |
+| 4 | Middleware de sécurité (vérification JWT/cookie, protection des routes privées)                    |  20 % |
+| 5 | Qualité du code & organisation (conventions Next.js, gestion des erreurs HTTP)                     |  10 % |
+| 6 | Tests manuels Postman (collection fournie et fonctionnelle)                                        |  10 % |
+|   | **Total TP2**                                                                                      | 100 % |
+
+
+
+# 2.2. Grille d’évaluation — **Projet intégrateur final**
+
+| # | Critère évalué                                                                                |  Poids |
+| - | --------------------------------------------------------------------------------------------- | -----: |
+| 1 | API REST finalisée (corrections TP2 appliquées, interface admin complète)                     |   25 % |
+| 2 | Intégration Stripe Checkout (création de session, gestion des erreurs)                        |   20 % |
+| 3 | Webhook Stripe (vérification de signature, attribution des photos achetées)                   |   15 % |
+| 4 | Documentation API (collection Postman ou Swagger complète et à jour)                          | 12,5 % |
+| 5 | Interface utilisateur (pages Next.js fonctionnelles : register, login, gallery, dashboard)    |   10 % |
+| 6 | Présentation orale + support PPT (architecture, démo fluide en ≈ 5 min)                       |   10 % |
+| 7 | Qualité du code, déploiement & README (variables d’environnement, procédure de mise en route) |  7,5 % |
+|   | **Total Projet intégrateur**                                                                  |  100 % |
+
+
+
