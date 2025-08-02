@@ -285,3 +285,51 @@ Vous développez **un seul projet complet**, mais il sera évalué **en deux ét
 
 
 
+<br/>
+
+# Autres:
+
+<h1 id="icones-gratuites-aws-terraform">Icônes gratuites libres de droits – AWS, Terraform, Cloud & DevOps</h1>
+
+###  Icônes officielles AWS gratuites
+
+| Source                                | Lien                                                                                                                           | Type de contenu                                                     | Licence                                                                                          |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **AWS Architecture Icons** (officiel) | [https://aws.amazon.com/architecture/icons/](https://aws.amazon.com/architecture/icons/)                                       | Icônes SVG/PNG de tous les services AWS (EC2, S3, Lambda, etc.)     | ✅ **Gratuit et réutilisable** à des fins non commerciales (ex: projets étudiants, présentations) |
+| **AWS Simple Icons GitHub** (archive) | [https://github.com/duo-labs/cloudmapper/tree/master/icons/aws](https://github.com/duo-labs/cloudmapper/tree/master/icons/aws) | Icônes PNG, utilisées dans des outils open source comme CloudMapper | ✅ Libre pour usage éducatif                                                                      |
+
+
+
+###  Icônes Terraform, Kubernetes, Docker, Git, etc.
+
+| Source           | Lien                                                 | Type de contenu                                                    | Licence                                               |
+| ---------------- | ---------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------- |
+| **Devicon**      | [https://devicon.dev/](https://devicon.dev/)         | Icônes SVG pour Terraform, Git, Docker, Kubernetes, Linux, etc.    | ✅ **100 % open source (MIT)**                         |
+| **Simple Icons** | [https://simpleicons.org/](https://simpleicons.org/) | Icônes officielles (marques) en SVG (Terraform, GitHub, AWS, etc.) | ✅ MIT License, parfait pour sites, docs et interfaces |
+| **Lucide.dev**   | [https://lucide.dev/](https://lucide.dev/)           | Pack SVG moderne et personnalisable (non spécifique cloud)         | ✅ Open source                                         |
+| **Tabler Icons** | [https://tabler-icons.io/](https://tabler-icons.io/) | Icônes légères et lisibles, incluant DevOps, shell, CLI, cloud     | ✅ Licence MIT                                         |
+
+
+
+### Icônes pour présentations, rapports, diagrammes
+
+| Source                             | Lien                                                   | Contenu                                                           | Licence                                        |
+| ---------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------- | ---------------------------------------------- |
+| **Iconify.design**                 | [https://iconify.design/](https://iconify.design/)     | Moteur de recherche multi-librairies (FontAwesome, Devicon, etc.) | ✅ Gratuit (vérifier la licence de chaque pack) |
+| **Flaticon (sélection technique)** | [https://www.flaticon.com/](https://www.flaticon.com/) | Icônes DevOps, cloud, terminal, code (PNG/SVG)                    | ⚠️ Attribution requise si plan gratuit         |
+
+
+
+###  Résumé 
+
+| Catégorie            | Site recommandé                                                   | Licence                | Notes                                      |
+| -------------------- | ----------------------------------------------------------------- | ---------------------- | ------------------------------------------ |
+| AWS Services         | [AWS Icons](https://aws.amazon.com/architecture/icons/)           | ✅ Officiel             | Pour diagrammes et docs                    |
+| Terraform, Git, etc. | [Devicon](https://devicon.dev/)                                   | ✅ MIT                  | Parfait pour README, admin UI              |
+| Logos officiels      | [Simple Icons](https://simpleicons.org/)                          | ✅ MIT                  | Logos SVG de produits (ex: GitHub, Stripe) |
+| UI modernes          | [Lucide](https://lucide.dev/), [Tabler](https://tabler-icons.io/) | ✅ MIT                  | Icônes pour boutons, interface admin       |
+| Illustrations cloud  | [Flaticon](https://www.flaticon.com/) (optionnel)                 | ⚠️ Attribution requise | Utiliser uniquement si besoin visuel fort  |
+
+
+
+
