@@ -1,4 +1,4 @@
-<h1 id="explication-evaluations">Explication claire des évaluations : Laboratoire #2 et Projet intégrateur</h1>
+<h1 id="explication-evaluations">Explication des évaluations et grille des évaluations des Laboratoire #2 (20%) et du Projet intégrateur (40%)</h1>
 
 Bonjour à toutes et à tous,
 
