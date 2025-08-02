@@ -32,8 +32,8 @@ Afin d'éviter toute confusion et clarifier définitivement l’organisation des
 
 | Évaluation                   | Éléments évalués                                                                            | Pondération |
 | ---------------------------- | ------------------------------------------------------------------------------------------- | ----------- |
-| **Laboratoire #2**           | **Création uniquement : API REST** (authentification, photos, routes privées/admin)         | **20 %** ✅  |
-| **Projet intégrateur final** | **Création (finalisée) + Consommation (Stripe) + Documentation + Présentation orale (PPT)** | **40 %** ✅  |
+| **Laboratoire #2**           | **Création uniquement : API REST** (authentification, photos, routes privées/admin)         | **20 %**   |
+| **Projet intégrateur final** | **Création (finalisée) + Consommation (Stripe) + Documentation + Présentation orale (PPT)** | **40 %**   |
 
 **Important :**
 
