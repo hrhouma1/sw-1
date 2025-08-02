@@ -85,7 +85,7 @@ Bon courage à tous !
 
 
 
-# <h1 id="technologies-autorisées">Choix technologiques autorisés pour le TP2 et le Projet intégrateur (Stack)</h1>
+# <h1 id="technologies-autorisées"> 3 - Choix technologiques autorisés pour le TP2 et le Projet intégrateur (Stack)</h1>
 
 Le tableau ci-dessous dresse la liste **des options officiellement acceptées** pour chaque composant de votre stack.
 Vous êtes libres de combiner les technologies d’une même ligne (ex. Prisma + Neon + NextAuth) ; toute solution hors tableau doit être validée au préalable.
