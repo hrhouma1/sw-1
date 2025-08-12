@@ -4,6 +4,10 @@
 
 Suite à la démonstration du système de gestion de produits, vous devez maintenant concevoir et développer votre propre application Next.js intégrant des services web REST et une interface utilisateur complète.
 
+## Exemple à suivre réalisé en classe
+
+https://github.com/hrhouma1/next-01-evaluation-du-lab2.git
+
 ## Objectifs d'apprentissage
 
 À la fin de ce laboratoire, vous serez capable de :
