@@ -3,10 +3,9 @@
 ## « Services Web : Authentification (NextAuth **ou** JWT **ou** Clerk) »
 
 
-
 ## 1) Objet
 
-Poursuivre votre **Lab2** en y intégrant une **authentification** centrée **services web** avec l’une des trois approches suivantes (au choix) :
+Poursuivre votre **Lab2** ou un projet existant en y intégrant une **authentification** centrée **services web** avec l’une des trois approches suivantes (au choix) :
 
 * **Option A — NextAuth (sessions)**
 * **Option B — JWT (stateless, signé côté serveur)**
@@ -14,7 +13,7 @@ Poursuivre votre **Lab2** en y intégrant une **authentification** centrée **se
 
 > L’évaluation porte sur le **back-end/service web** : endpoints, middleware, cookies/JWT, sécurité, contrôle d’accès **côté serveur**, journalisation, et **documentation**. L’UI n’est pas l’axe principal.
 
----
+
 
 ## 2) Résultats d’apprentissage
 
@@ -26,7 +25,7 @@ Poursuivre votre **Lab2** en y intégrant une **authentification** centrée **se
 4. Rédiger une **documentation exécutable** (README pas-à-pas, OpenAPI/Postman, schémas).
 5. Prouver le fonctionnement via **tests** (succès/erreurs) et **logs**.
 
----
+
 
 ## 3) Contraintes (obligatoires)
 
@@ -40,7 +39,7 @@ Poursuivre votre **Lab2** en y intégrant une **authentification** centrée **se
   * **Séquence** (login → session/token → ressource protégée → logout → expiry/refresh).
 * **Journal de tests** (tableau) et **logs** (INFO/ERROR) sans fuite de secrets/PII.
 
----
+
 
 ## 4) Spécifications minimales par option
 
@@ -71,7 +70,7 @@ export { default } from "next-auth/middleware";
 export const config = { matcher: ["/admin/:path*"] };
 ```
 
----
+
 
 ### Option B — **JWT (stateless)**
 
@@ -104,7 +103,7 @@ export async function middleware(req) {
 export const config = { matcher:["/admin/:path*","/api/protected/:path*"] };
 ```
 
----
+
 
 ### Option C — **Clerk (sessions gérées)**
 
@@ -130,37 +129,33 @@ export async function GET() {
 }
 ```
 
----
 
 ## 5) Livrables
 
-1. **Dépôt Git** (branche/tag `lab2-auth`).
-2. **README.md** exécutable, incluant :
-
-   * Contexte & objectifs, prérequis (versions), scripts (`dev/build/start`).
+1. Rapport avec documentation complète, commandes à exécuter et les imprimes écrans
    * **Procédure pas-à-pas** (installation → env → exécution → vérifications).
    * **Contrat d’API** (OpenAPI/Postman) + **exemples cURL**.
    * **Schémas** (architecture + séquence).
-   * **Plan de tests** (table) + **extraits de logs**.
-3. **`.env.example`** commenté (sans secrets).
+
+3. **`.env.example`** commenté.
 4. **Preuve** : déploiement ou **vidéo** 3–6 min montrant **appels API** (login/session ou JWT), réponses HTTP, protections 401/403, logout.
 
----
+
 
 ## 6) Barème (100 points)
 
 | Axe (Services Web)     | Critères                                                        |    Pts |
 | ---------------------- | --------------------------------------------------------------- | -----: |
-| **Documentation**      | README pas-à-pas, structure académique, reproductibilité        | **20** |
-| **Contrat d’API**      | OpenAPI/Postman complet + cURL alignés                          | **12** |
-| **Conception d’API**   | Nommage, verbes, statuts HTTP, validation d’entrées             | **18** |
-| **Sessions/JWT**       | Création/lecture/invalidation, cookies/JWT sûrs, expiry/refresh | **20** |
-| **Protection serveur** | Middleware & contrôles serveur, 401/403 corrects                | **18** |
-| **Tests & logs**       | ≥6 cas (succès/erreur), logs utiles, preuves                    | **12** |
+| **Documentation**      | README pas-à-pas, structure académique, reproductibilité        | **40** |
+| **Contrat d’API**      | OpenAPI/Postman complet + cURL alignés                          | **10** |
+| **Conception d’API**   | Nommage, verbes, statuts HTTP, validation d’entrées             | **5** |
+| **Sessions/JWT**       | Création/lecture/invalidation, cookies/JWT sûrs, expiry/refresh | **15** |
+| **Protection serveur** | Middleware & contrôles serveur, 401/403 corrects                | **30** |
+
 
 **Total : 100** — **Bonus +5** : mapping de rôles (user/admin) avec garde serveur propre et testé.
 
----
+
 
 ## 7) Plan de tests — gabarit à inclure
 
@@ -175,7 +170,7 @@ export async function GET() {
 | Logout                         | Session active  | `POST /api/auth/logout`                    | `204/200`          |
 | Expiration                     | TTL dépassé     | Ressource protégée                         | `401`              |
 
----
+
 
 ## 8) Checklist sécurité (à cocher dans le README)
 
@@ -186,17 +181,12 @@ export async function GET() {
 * [ ] **Logs** sans secrets, niveau INFO/ERROR.
 * [ ] **.env.example** complet, secrets non commit.
 
----
 
-## 9) Remise
 
-* **Date/heure limite** : \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
-* Déposer : lien Git, lien déploiement **ou** vidéo, fichiers OpenAPI/Postman, README conforme.
 
----
 
 ### Conseils
 
 * Commencez par **le serveur** (endpoints + middleware), testez avec **cURL/Postman**, puis branchez l’UI.
 * Faites d’abord passer les **tests 401/403** (sans UI), puis finalisez le login/logout.
-* Gardez les logs clairs et brefs ; supprimez tout **secret** avant remise.
+* Gardez les logs clairs et brefs;
