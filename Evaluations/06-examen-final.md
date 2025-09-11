@@ -1,4 +1,4 @@
-# Énoncé académique — Prolongement du **Lab2**
+# Examen final
 
 ## « Services Web : Authentification (NextAuth **ou** JWT **ou** Clerk) »
 
